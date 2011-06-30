@@ -60,6 +60,7 @@ public class DateTimePickerDemo extends Activity implements OnClickListener {
 		((Button) mDateTimeDialogView.findViewById(R.id.SetDateTime)).setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
+				mDateTimePicker.clearFocus();
 				// TODO Auto-generated method stub
 				((TextView) findViewById(R.id.Date)).setText(mDateTimePicker.get(Calendar.YEAR) + "/" + (mDateTimePicker.get(Calendar.MONTH)+1) + "/"
 						+ mDateTimePicker.get(Calendar.DAY_OF_MONTH));
